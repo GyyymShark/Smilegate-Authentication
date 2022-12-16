@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cb6646a-54e3-4402-8934-0f397433f150" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/example/authentication/AuthenticationApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/example/authentication/Controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/example/authentication/Domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/example/authentication/Repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/example/authentication/Service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/src/test/java/com/example/authentication/AuthenticationApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +20,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2J0AfDWGnczFqd2sz1j9l28aj04" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
