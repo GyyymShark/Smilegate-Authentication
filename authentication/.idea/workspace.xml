@@ -4,36 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d058084-5464-4e86-b544-3e299c5f71a4" name="Changes" comment="" />
+    <list default="true" id="3cb6646a-54e3-4402-8934-0f397433f150" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/example/authentication/AuthenticationApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/example/authentication/Controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/example/authentication/Domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/example/authentication/Repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/example/authentication/Service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/src/test/java/com/example/authentication/AuthenticationApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$/authentication">
+    <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2IzwYShSo7H28aWcbT2yzyKhisP" />
+  <component name="ProjectId" id="2J0AfDWGnczFqd2sz1j9l28aj04" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,21 +44,37 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/#윈터데브캠프/Smilegate-Authentication",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+    "last_opened_file_path": "D:/#윈터데브캠프/Smilegate-Authentication/authentication"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="AuthenticationApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.authentication.AuthenticationApplication" />
+      <module name="authentication.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.authentication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AuthenticationApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5d058084-5464-4e86-b544-3e299c5f71a4" name="Changes" comment="" />
-      <created>1671197771808</created>
+      <changelist id="3cb6646a-54e3-4402-8934-0f397433f150" name="Changes" comment="" />
+      <created>1671204727305</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1671197771808</updated>
+      <updated>1671204727305</updated>
     </task>
     <servers />
   </component>
