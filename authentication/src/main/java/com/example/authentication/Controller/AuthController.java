@@ -34,6 +34,8 @@ public class AuthController {
 
         UsernamePasswordAuthenticationToken authenticationToken =
                 new UsernamePasswordAuthenticationToken(loginDto.getUsername(), loginDto.getPassword());
+        System.out.println("loginDto.getUsername() = " + loginDto.getUsername());
+        System.out.println("loginDto.getPassword() = " + loginDto.getPassword());
 
         Authentication authentication = authenticationManagerBuilder.getObject().authenticate(authenticationToken);
         SecurityContextHolder.getContext().setAuthentication(authentication);
