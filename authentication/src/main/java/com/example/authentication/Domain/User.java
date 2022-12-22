@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-
+/*
 @Getter
 @Entity
 @RequiredArgsConstructor
@@ -17,4 +17,4 @@ public class User {
     private Long id;
     private String user_id;
     private String password;
-}
+}*/

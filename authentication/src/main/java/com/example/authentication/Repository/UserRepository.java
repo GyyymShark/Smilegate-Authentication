@@ -1,7 +1,7 @@
 package com.example.authentication.Repository;
 
 
-import com.example.authentication.Domain.User;
+
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -14,9 +14,9 @@ public class UserRepository {
     @PersistenceContext
     private EntityManager em;
 
-
+/*
     public List<User> findAll() {
         return em.createQuery("select u from User u", User.class)
                 .getResultList();
-    }
+    }*/
 }
