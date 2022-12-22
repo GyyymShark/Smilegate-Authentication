@@ -19,4 +19,6 @@ public class UserRepository {
         return em.createQuery("select u from User u", User.class)
                 .getResultList();
     }*/
+
+
 }
