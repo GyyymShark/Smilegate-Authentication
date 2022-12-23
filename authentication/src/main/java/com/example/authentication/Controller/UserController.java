@@ -26,6 +26,7 @@ public class UserController {
         this.userService = userService;
     }
 
+    @CrossOrigin(origins="http://localhost:8089")
     @GetMapping("/hello")
     public ResponseEntity<String> hello() {
         return ResponseEntity.ok("hello");
