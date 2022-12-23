@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/Sungmin.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
+    <title>Member Login</title>
+    <style>
+</style>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+          <a href="/main">
+            <img src="img/logo.jpg" alt="logo">
+          </a>
+        </div>
+      </div>
+      <br><br><br>
+    <div class ="container">
+        <main>
+            <div><h1>LOGIN</h1></div>
+            <div id=signin>
+              <form id="loginForm" action="/login" method="post">
+                <input id="userId" name="userId" type="text" placeholder="ID" autofocus><br><br>
+                <input id="password" name="password" type="password" placeholder="PASSWORD"><br>
+              </form>
+              <br>
+              <button id="loginBtn" class="login-btn btn btn-primary btn-block" onclick="memberLogin()">LOGIN</button>
+              <div class="align-left">
+                <a href="/join">Join</a>
+              </div>
+              <div class="align-right">
+                <a href="#">ID*Password Find</a>
+              </div>
+            </div>
+            <hr>
+        </main>
+    </div>
+    <br><br>
+    <div id="footer">
+        <div id="footerL">
+          <p>© 2022  <a href="">IN GOLD WE TRUST PARIS</a></p>
+          <p><a href="">NEWS</a></p>
+          <p><a href="">LEGALS</a></p>
+          <p><a href="">SHIPPING & RETURNS</a></p>
+          <a href=""><img src="img/insta.jpg" alt="instagram" width="12px" height="12px"></a>
+          <a href=""><img src="img/facebook.jpg" alt="facebook" width="12px" height="12px"></a>
+        </div>
+
+        
+        <div id=footerR>
+          <input type="text" placeholder="ENTER EMAIL">
+          <input type="button" value="JOIN">
+        </div>
+
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script>
+        function memberLogin(){
+          console.log('sdfsfd');
+          var userId = document.getElementById('userId').value;
+          var password = document.getElementById('password').value;
+          var sendData = {'userId' : userId, 'password' : password};
+          sendData = JSON.stringify(sendData);
+          
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', 'http://localhost:3000/login');
+          xhr.setRequestHeader('Content-Type', 'application/json');
+          xhr.send(sendData);
+            
+          xhr.addEventListener('load', function(){
+            var result = JSON.parse(xhr.responseText);       
+            console.log("ㄷ시 돌아옴");
+            window.location.href="/main";
+          })
+        }
+      </script>
+</body>
+</html>
