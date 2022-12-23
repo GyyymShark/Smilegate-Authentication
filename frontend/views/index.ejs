@@ -113,8 +113,57 @@
 
         </div>
         <script>
-      
+          var token=getCookie("jwt");
+          console.log(token);
           
+          $.ajax({
+            url: `http://localhost:8089/api/user/name/${token}`,
+            headers: {
+                'Authorization': `Bearer ${token}`,
+            },
+            method: 'POST',
+            success: function(data){
+              console.log('succes: '+data);
+            }
+          });
+          
+
+
+          function getCookie(name) {
+
+var nameOfCookie = name + "="; 
+
+var x = 0;
+
+while (x <= document.cookie.length) {  
+
+     var y = (x + nameOfCookie.length);
+
+     if (document.cookie.substring(x, y) == nameOfCookie) { 
+
+          if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)  
+
+               endOfCookie = document.cookie.length; 
+
+          return unescape(document.cookie.substring(y, endOfCookie)); 
+     }
+
+     x = document.cookie.indexOf(" ", x) + 1;
+
+     if (x == 0) 
+
+          break;
+    }
+
+return ""; 
+
+}
+          
+          
+        </script>
+
+        <script>
+        
         </script>
 </body>
 </html>

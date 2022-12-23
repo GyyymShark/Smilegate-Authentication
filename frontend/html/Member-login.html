@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	
+
     <title>Member Login</title>
     <style>
 </style>
@@ -36,7 +36,7 @@
                 <a href="/join">Join</a>
               </div>
               <div class="align-right">
-                <a href="#">ID*Password Find</a>
+                <a href="">ID*Password Find</a>
               </div>
             </div>
             <hr>
@@ -65,20 +65,20 @@
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <script>
         function memberLogin(){
-          console.log('sdfsfd');
           var userId = document.getElementById('userId').value;
           var password = document.getElementById('password').value;
-          var sendData = {'userId' : userId, 'password' : password};
+          var sendData = {'username' : userId, 'password' : password};
           sendData = JSON.stringify(sendData);
           
           var xhr = new XMLHttpRequest();
-          xhr.open('POST', 'http://localhost:3000/login');
+          xhr.open('POST', 'http://localhost:8089/api/authenticate');
           xhr.setRequestHeader('Content-Type', 'application/json');
           xhr.send(sendData);
             
           xhr.addEventListener('load', function(){
             var result = JSON.parse(xhr.responseText);       
-            console.log("ㄷ시 돌아옴");
+            console.log(result.token);
+            document.cookie=`jwt=${result.token}`;
             window.location.href="/main";
           })
         }

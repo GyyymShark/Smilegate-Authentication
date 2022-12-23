@@ -15,6 +15,7 @@ var connection = mysql.createConnection({     //mysql connection 생성
 connection.connect();       //mysql 연동
 
 router.get('/', function(req, res){
+
   console.log('main.js 실행');
   console.log('유저id : ' + req.user);
   var userNickname;
@@ -34,10 +35,23 @@ router.get('/', function(req, res){
     res.render('index.ejs', {user : userNickname});
   }
   
-  
-
-  // console.log('유저닉네임 : ' + userNickname);
-  
 })
+
+function before() {
+  var token = document.cookie.match("jwt");
+  console.log(token);
+  $.ajax({
+      type: "GET",
+      url: "/api/me",
+      beforeSend: function (xhr) {
+          xhr.setRequestHeader("Content-type","application/json");
+          xhr.setRequestHeader("Authorization","JWT " + token);
+      },
+      success: function (res) {
+          console.log(res);
+      }
+  });
+}
+
 
 module.exports = router;
