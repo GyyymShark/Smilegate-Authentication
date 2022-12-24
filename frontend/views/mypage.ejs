@@ -65,7 +65,24 @@
           </div>
         </div>
 
+        <div class="rows">
 
+          <div class="row" id="regist-img" style="padding:30px 0px 30px 0px; border-top:3px solid black; border-bottom:0.5px solid #C7C7C7;">
+            <table class="table table-striped">
+              <thead>
+              <th>userId</th>
+                <th>authorities</th>
+                <th>username</th>
+                <th>nickname</th>
+            </thead>
+            <tbody id="userlist">
+
+            </tbody>
+        
+
+            </table>
+  
+        </div>
   </form>
 
     <div id="footer">
@@ -116,7 +133,39 @@
               console.log(error);
             },
             success: function(data){
-             console.log(data);
+              var tc = new Array();
+              var html = '';
+              var userlist=document.getElementById('userlist');
+
+
+             var list='';
+             for(var i=0; i<data.length; i++){
+              
+              if(data[i].authorities.length>=1){
+                for(var j=0; j<data[i].authorities.length; j++){
+                  tc.push({userId : data[i].userId, authorities : data[i].authorities[j].authorityName,
+                  username : data[i].username,
+                nickname : data[i].nickname });
+                }
+                
+              }
+              else{
+                tc.push({userId : data[i].userId, authorities : data[i].authorities[0].authorityName, username : data[i].username,
+                nickname : data[i].nickname });
+              }
+               
+             }
+             for(key in tc){
+              html += '<tr>';   
+              html += '<td>'+tc[key].userId+'</td>';
+              html += '<td>'+tc[key].authorities+'</td>';
+              html += '<td>'+tc[key].username+'</td>';
+              html += '<td>'+tc[key].nickname+'</td>';
+              html += '</tr>';
+             }
+             			
+            $("#userlist").empty();
+            $("#userlist").append(html);
             }
           });
             }
