@@ -6,10 +6,37 @@
   <component name="ChangeListManager">
     <list default="true" id="3cb6646a-54e3-4402-8934-0f397433f150" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authentication/Config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authentication/Config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authentication/Controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authentication/Controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authentication/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authentication/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authentication/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authentication/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authentication/Jwt/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authentication/Jwt/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authentication/Repository/UserRepository2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authentication/Repository/UserRepository2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/authentication/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/authentication/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/html/Manager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/html/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/html/join_agree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/html/notice_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/router/admin/admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/router/comment/comment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/router/notice/notice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/router/product/product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/router/regist/regist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/sql/after normalization.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/sql/before normalization.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/sql/insert data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/views/admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/views/admin.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/views/comment_edit.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/views/mypage.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/views/mypage.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/views/mypage_edit.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/views/notice.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/views/notice_detail.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/views/product.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/views/product_detail.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/views/regist.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/views/regist_edit.ejs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
