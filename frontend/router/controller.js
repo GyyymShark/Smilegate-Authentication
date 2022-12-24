@@ -8,24 +8,14 @@ var path = require('path');         //상대경로로 편리하게 이동할 수
 var main = require('./main/main');
 var join = require('./join/join');
 var login = require('./login/login');
-var product = require('./product/product');
-var regist = require('./regist/regist');
-var comment = require('./comment/comment');
 var mypage = require('./mypage/mypage');
-var notice= require('./notice/notice');
-var admin = require('./admin/admin');
 
 
 
 router.use('/main', main);
 router.use('/join', join);
 router.use('/login', login);
-router.use('/product', product);
-router.use('/regist', regist);
-router.use('/comment', comment);
 router.use('/mypage', mypage);
-router.use('/notice', notice);
-router.use('/admin', admin);
 
 
 router.get('/', function(req, res){
