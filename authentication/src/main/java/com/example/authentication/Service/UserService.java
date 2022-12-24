@@ -2,6 +2,7 @@ package com.example.authentication.Service;
 
 
 import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 
 import com.example.authentication.Dto.UserDto;
@@ -59,4 +60,10 @@ public class UserService {
                         .orElseThrow(() -> new NotFoundMemberException("Member not found"))
         );
     }
+
+    @Transactional(readOnly = true)
+    public List<User> getAllUserWithAuthorities() {
+        return userRepository.findAll();
+    }
+
 }
