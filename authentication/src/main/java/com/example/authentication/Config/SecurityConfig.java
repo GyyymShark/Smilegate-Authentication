@@ -62,7 +62,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.filter.CorsFilter;
 
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableGlobalMethodSecurity(prePostEnabled = true)      //@PreAuthorize 어노테이션을 메소드단위로 추가하기 위해서 적용
 public class SecurityConfig {
     private final TokenProvider tokenProvider;
     private final CorsFilter corsFilter;
@@ -83,12 +83,12 @@ public class SecurityConfig {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+        return new BCryptPasswordEncoder(); //passwordencoder는 bcrpytpasswordencoder 사용
     }
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
-        return (web) -> web.ignoring().antMatchers("/h2-console/**"
+        return (web) -> web.ignoring().antMatchers("/mysql/**"
                 , "/favicon.ico"
                 , "/error");
     }
@@ -103,7 +103,7 @@ public class SecurityConfig {
 
                 .exceptionHandling()
                 .authenticationEntryPoint(jwtAuthenticationEntryPoint)
-                .accessDeniedHandler(jwtAccessDeniedHandler)
+                .accessDeniedHandler(jwtAccessDeniedHandler)    //exception 핸들링은 만들었던 클래스들 추가
 
                 // enable h2-console
                 .and()
@@ -117,12 +117,12 @@ public class SecurityConfig {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
 
                 .and()
-                .authorizeRequests()
+                .authorizeRequests()    //httpservletrequest 요청에 대한 접근제한을 설정하겠다
                 .antMatchers("/api/hello").permitAll()
                 .antMatchers("/api/authenticate").permitAll()
-                .antMatchers("/api/signup").permitAll()
+                .antMatchers("/api/signup").permitAll()     //인증없이 접근을 허용한다
 
-                .anyRequest().authenticated()
+                .anyRequest().authenticated()   //나머지 요청들은 모두 인증되어야 한다
 
                 .and()
                 .apply(new JwtSecurityConfig(tokenProvider));

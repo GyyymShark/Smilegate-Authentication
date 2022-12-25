@@ -64,13 +64,20 @@ public class UserController {
         return ResponseEntity.ok(userService.getUserWithAuthorities(username));
     }
 
-
+/*
     @GetMapping("/user/list")
     @PreAuthorize("hasAnyRole('ADMIN')")
     public List<User> getUserList(){
         List<User> allUserWithAuthorities = userService.getAllUserWithAuthorities();
         System.out.println("allUserWithAuthorities = " + allUserWithAuthorities);
         return allUserWithAuthorities;
+    }
+*/
+
+    @GetMapping("/user/list")
+    @PreAuthorize("hasAnyRole('ADMIN')")
+    public ResponseEntity<List<User>> getUserList(){
+        return ResponseEntity.ok(userService.getAllUserWithAuthorities());
     }
 
 
