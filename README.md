@@ -23,7 +23,8 @@
 - ajax를 이용해 api 호출
 - 인증 서버 API는 Spring Boot, Spring Security를 사용
 - Jwt token을 발급해서 로그인, 인증 권한을 확인(access token만 구현돼있다)
-- 비밀번호 암호화는 HS512 알고리즘을 사용
+- 비밀번호 암호화는 BCryptPasswordEncoder 사용
+- 토큰 암호화는 HS512 알고리즘 사용
 
 
 ## 개발관련 과정에서 궁금했던 부분
