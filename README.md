@@ -1,3 +1,4 @@
+12/25 1차 개발다완료했습니다
 # Smilegate-Authentication
 
 
@@ -35,7 +36,8 @@
 
 
 ## 코드 중 확인받고 싶은 부분
-
+강의를 보고 코드를 따라서 작성하며 공부를 했습니다
+https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-jwt/dashboard
 
 
 
